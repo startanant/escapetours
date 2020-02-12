@@ -9,7 +9,7 @@ function Test() {
 let p_destinations = [{
     continent: 'Europe',
     country: 'Poland',
-    code: 'PL',
+    code: 'PLN',
     city: 'Warsaw',
     coord: {
       lon: 21.01178,
@@ -19,7 +19,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Poland',
-    code: 'PL',
+    code: 'PLN',
     city: 'Gdansk',
     coord: {
       lon: 18.689699,
@@ -29,7 +29,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'France',
-    code: 'FR',
+    code: 'EUR',
     city: 'Paris',
     coord: {
       lon: 2.35236,
@@ -40,7 +40,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'France',
-    code: 'FR',
+    code: 'EUR',
     city: 'Nice',
     coord: {
       lon: 7.25,
@@ -51,7 +51,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Italy',
-    code: 'IT',
+    code: 'EUR',
     city: 'Sciacca',
     coord: {
       lon: 13.08399,
@@ -62,7 +62,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Italy',
-    code: 'IT',
+    code: 'EUR',
     city: 'Casarano',
     coord: {
       lon: 18.163031,
@@ -73,7 +73,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'New York',
     coord: {
       lon: -75.499901,
@@ -84,7 +84,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Washington',
     coord: {
       lon: -91.69294,
@@ -95,7 +95,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Los Angeles',
     coord: {
       lon: -118.243683,
@@ -106,7 +106,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'California',
     coord: {
       lon: -76.507446,
@@ -117,7 +117,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Texas',
     coord: {
       lon: -99.25061,
@@ -128,7 +128,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'Canada',
-    code: 'CA',
+    code: 'CAD',
     city: 'Toronto',
     coord: {
       lon: -79.416298,
@@ -139,7 +139,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'Canada',
-    code: 'CA',
+    code: 'CAD',
     city: 'Ottawa',
     coord: {
       lon: -75.69812,
@@ -150,7 +150,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'China',
-    code: 'CN',
+    code: 'CNY',
     city: 'Jiangchuanlu',
     coord: {
       lon: 121.407417,
@@ -163,7 +163,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'China',
-    code: 'CN',
+    code: 'CNY',
     city: 'Beijing',
     coord: {
       lon: 116.397232,
@@ -176,7 +176,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Thailand',
-    code: 'TH',
+    code: 'THB',
     city: 'Tha Maka',
     coord: {
       lon: 99.76667,
@@ -187,7 +187,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Thailand',
-    code: 'TH',
+    code: 'THB',
     city: 'Bangkok',
     coord: {
       lon: 100.51667,
@@ -198,7 +198,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Sydney',
     coord: {
       lon: 151.207321,
@@ -209,7 +209,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Canberra',
     coord: {
       lon: 149.128067,
@@ -222,7 +222,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Carindale',
     coord: {
       lon: 153.102356,
@@ -235,7 +235,7 @@ let p_destinations = [{
   {
     continent: 'Africa',
     country: 'Egypt',
-    code: 'EG',
+    code: 'EGP',
     city: 'Cairo',
     coord: {
       lon: 31.24967,
@@ -248,7 +248,7 @@ let p_destinations = [{
   {
     continent: 'Africa',
     country: 'Egypt',
-    code: 'EG',
+    code: 'EGP',
     city: 'Alexandria',
     coord: {
       lon: 29.955271,
@@ -274,7 +274,7 @@ let p_destinations = [{
   {
     continent: 'Africa',
     country: 'Gabon',
-    code: 'GA',
+    code: 'XAF',
     city: 'Gamba',
     coord: {
       lon: 10,
@@ -287,7 +287,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Brasil',
-    code: 'BR',
+    code: 'BRL',
     city: 'Rio de Janeiro',
     coord: {
       lon: -43.2075,
@@ -300,7 +300,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Brasil',
-    code: 'BR',
+    code: 'BRL',
     city: 'Salto',
     coord: {
       lon: -47.286942,
@@ -311,7 +311,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Great Britain',
-    code: 'GB',
+    code: 'GBP',
     city: 'London',
     coord: {
       "lon": -0.12574,
@@ -322,7 +322,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Germany',
-    code: 'DE',
+    code: 'EUR',
     city: 'Berlin',
     coord: {
       "lon": 13.41053,
@@ -333,7 +333,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Netherlands',
-    code: 'NL',
+    code: 'EUR',
     city: 'Amsterdam',
     coord: {
       "lon": 4.88969,
@@ -344,7 +344,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Austria',
-    code: 'AT',
+    code: 'EUR',
     city: 'Vienna',
     coord: {
       "lon": 16.37208,
@@ -355,7 +355,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Czechia',
-    code: 'CZ',
+    code: 'EUR',
     city: 'Prague',
     coord: {
       "lon": 14.42076,
@@ -366,7 +366,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Hungary',
-    code: 'HU',
+    code: 'EUR',
     city: 'Budapest',
     coord: {
       "lon": 19.039909,
@@ -377,7 +377,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Spain',
-    code: 'ES',
+    code: 'EUR',
     city: 'Barcelona',
     coord: {
       "lon": 2.12804,
@@ -388,7 +388,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Spain',
-    code: 'ES',
+    code: 'EUR',
     city: 'Madrid',
     coord: {
       "lon": -3.68275,
@@ -399,7 +399,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Danmark',
-    code: 'DK',
+    code: 'DKK',
     city: 'Copenhagen',
     coord: {
       "lon": 12.56553,
@@ -410,7 +410,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Portugal',
-    code: 'PT',
+    code: 'EUR',
     city: 'Lisbon',
     coord: {
       "lon": -9.13333,
@@ -421,7 +421,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Greece',
-    code: 'GR',
+    code: 'EUR',
     city: 'Athens',
     coord: {
       "lon": 23.716221,
@@ -432,7 +432,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Sweden',
-    code: 'SE',
+    code: 'SEK',
     city: 'Stockholm',
     coord: {
       "lon": 18.064899,
@@ -443,7 +443,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Italy',
-    code: 'IT',
+    code: 'EUR',
     city: 'Milano',
     coord: {
       "lon": 9.18951,
@@ -454,7 +454,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Italy',
-    code: 'IT',
+    code: 'EUR',
     city: 'Rome',
     coord: {
       "lon": 12.4839,
@@ -465,7 +465,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Italy',
-    code: 'IT',
+    code: 'EUR',
     city: 'Venice',
     coord: {
       "lon": 12.32667,
@@ -476,7 +476,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Turkey',
-    code: 'TR',
+    code: 'TRY',
     city: 'Istanbul',
     coord: {
       "lon": 28.949659,
@@ -487,7 +487,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Ireland',
-    code: 'IE',
+    code: 'EUR',
     city: 'Dublin',
     coord: {
       "lon": -6.26719,
@@ -498,7 +498,7 @@ let p_destinations = [{
   {
     continent: 'Europe',
     country: 'Chroatia',
-    code: 'HR',
+    code: 'HRK',
     city: 'Dubrovnik',
     coord: {
       "lon": 18.092159,
@@ -509,7 +509,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'China',
-    code: 'CN',
+    code: 'CNY',
     city: 'Shanghai',
     coord: {
       "lon": 121.458061,
@@ -520,7 +520,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Korea',
-    code: 'KR',
+    code: 'KRW',
     city: 'Seoul',
     coord: {
       "lon": 126.977829,
@@ -531,7 +531,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'India',
-    code: 'IN',
+    code: 'INR',
     city: 'Mumbai',
     coord: {
       "lon": 72.847939,
@@ -542,7 +542,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Malaysia',
-    code: 'ML',
+    code: 'MYR',
     city: 'Kuala Lumpur',
     coord: {
       "lon": 101.686531,
@@ -553,7 +553,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'China',
-    code: 'CN',
+    code: 'CNY',
     city: 'Shenzhen',
     coord: {
       "lon": 121.339706,
@@ -564,7 +564,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Indonesia',
-    code: 'ID',
+    code: 'IDR',
     city: 'Jakarta',
     coord: {
       "lon": 106.845131,
@@ -575,7 +575,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Philipinnes',
-    code: 'PH',
+    code: 'PHP',
     city: 'Manila',
     coord: {
       "lon": 120.982201,
@@ -588,7 +588,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Taiwan',
-    code: 'TW',
+    code: 'TWD',
     city: 'Taipei',
     coord: {
       "lon": 121.531853,
@@ -599,7 +599,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Japan',
-    code: 'JP',
+    code: 'JPY',
     city: 'Tokyo',
     coord: {
       "lon": 139.691711,
@@ -610,7 +610,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'India',
-    code: 'IN',
+    code: 'INR',
     city: 'Kolkata',
     coord: {
       "lon": 88.36972,
@@ -621,7 +621,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Japan',
-    code: 'JP',
+    code: 'JPY',
     city: 'Osaka',
     coord: {
       "lon": 137.266663,
@@ -632,7 +632,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Vietnam',
-    code: 'VN',
+    code: 'VND',
     city: 'Ha Noi',
     coord: {
       "lon": 105.841171,
@@ -643,7 +643,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Pakistan',
-    code: 'PK',
+    code: 'PKR',
     city: 'Karachi',
     coord: {
       "lon": 67.082199,
@@ -654,7 +654,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'United Arab Emirates',
-    code: 'AE',
+    code: 'AED',
     city: 'Dubai',
     coord: {
       "lon": 55.304722,
@@ -665,7 +665,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Japan',
-    code: 'JP',
+    code: 'JPY',
     city: 'Kyoto',
     coord: {
       "lon": 135.753845,
@@ -676,7 +676,7 @@ let p_destinations = [{
   {
     continent: 'Asia',
     country: 'Hong Kong',
-    code: 'HK',
+    code: 'HKD',
     city: 'Hong Kong',
     coord: {
       "lon": 114.157692,
@@ -687,7 +687,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Melbourne',
     coord: {
       "lon": 144.963318,
@@ -700,7 +700,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Brisbane',
     coord: {
       "lon": 153.029938,
@@ -711,7 +711,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Adelaide',
     coord: {
       "lon": 138.600586,
@@ -722,7 +722,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Perth',
     coord: {
       "lon": 115.833328,
@@ -733,7 +733,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Gold Coast',
     coord: {
       "lon": 153.36055,
@@ -744,7 +744,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Hobart',
     coord: {
       "lon": 147.329407,
@@ -755,7 +755,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Darwin',
     coord: {
       "lon": 130.876846,
@@ -768,7 +768,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'Australia',
-    code: 'AU',
+    code: 'AUD',
     city: 'Newcastle',
     coord: {
       "lon": 151.708435,
@@ -781,7 +781,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'New Zealand',
-    code: 'NZ',
+    code: 'NZD',
     city: 'Auckland',
     coord: {
       "lon": 174.783325,
@@ -794,7 +794,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'New Zealand',
-    code: 'NZ',
+    code: 'NZD',
     city: 'Wellington',
     coord: {
       "lon": 174.766663,
@@ -807,7 +807,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'New Zealand',
-    code: 'NZ',
+    code: 'NZD',
     city: 'Christchurch',
     coord: {
       "lon": 172.633331,
@@ -818,7 +818,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'New Zealand',
-    code: 'NZ',
+    code: 'NZD',
     city: 'Dunedin',
     coord: {
       "lon": 170.503616,
@@ -829,7 +829,7 @@ let p_destinations = [{
   {
     continent: 'Australia',
     country: 'New Zealand',
-    code: 'NZ',
+    code: 'NZD',
     city: 'Wanaka',
     coord: {
       "lon": 169.149994,
@@ -840,7 +840,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'San Francisco',
     coord: {
       "lon": -122.419418,
@@ -851,7 +851,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Chicago',
     coord: {
       "lon": -87.650047,
@@ -862,7 +862,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Seattle',
     coord: {
       "lon": -122.332069,
@@ -873,7 +873,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Boston',
     coord: {
       "lon": -83.789886,
@@ -884,7 +884,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Austin',
     coord: {
       "lon": -85.808029,
@@ -895,7 +895,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Houston',
     coord: {
       "lon": -95.363274,
@@ -906,7 +906,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Philadelphia',
     coord: {
       "lon": -89.11673,
@@ -917,7 +917,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Denver',
     coord: {
       "lon": -92.337402,
@@ -928,7 +928,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'San Diego',
     coord: {
       "lon": -117.157257,
@@ -939,7 +939,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Portland',
     coord: {
       "lon": -122.676208,
@@ -952,7 +952,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Miami',
     coord: {
       "lon": -94.877457,
@@ -963,7 +963,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Detroit',
     coord: {
       "lon": -83.045753,
@@ -974,7 +974,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Atlanta',
     coord: {
       "lon": -94.164352,
@@ -985,7 +985,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Dallas',
     coord: {
       "lon": -75.963249,
@@ -996,7 +996,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'Las Vegas',
     coord: {
       "lon": -105.2239,
@@ -1007,7 +1007,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'USA',
-    code: 'US',
+    code: 'USD',
     city: 'San Antonio',
     coord: {
       "lon": -98.493629,
@@ -1018,7 +1018,7 @@ let p_destinations = [{
   {
     continent: 'North America',
     country: 'Canada',
-    code: 'CA',
+    code: 'CAD',
     city: 'Vancouver',
     coord: {
       "lon": -123.119339,
@@ -1031,7 +1031,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Argentina',
-    code: 'AR',
+    code: 'ARS',
     city: 'Buenos Aires',
     coord: {
       "lon": -58.377232,
@@ -1042,7 +1042,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Chile',
-    code: 'CL',
+    code: 'CLP',
     city: 'Santiago',
     coord: {
       "lon": -70.64827,
@@ -1054,7 +1054,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Peru',
-    code: 'PE',
+    code: 'PEN',
     city: 'Lima',
     coord: {
       "lon": -77.028236,
@@ -1066,7 +1066,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Brasil',
-    code: 'BR',
+    code: 'BRL',
     city: 'Sao Paulo',
     coord: {
       "lon": -46.636108,
@@ -1078,7 +1078,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Columbia',
-    code: 'CO',
+    code: 'COP',
     city: 'Bogota',
     coord: {
       "lon": -74.081749,
@@ -1090,7 +1090,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Ecuador',
-    code: 'EC',
+    code: 'USD',
     city: 'Quito',
     coord: {
       "lon": -78.524948,
@@ -1102,7 +1102,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Urugway',
-    code: 'UY',
+    code: 'UYU',
     city: 'Montevideo',
     coord: {
       "lon": -56.167351,
@@ -1114,7 +1114,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Colombia',
-    code: 'CO',
+    code: 'COP',
     city: 'Cartagena',
     coord: {
       "lon": -75.514442,
@@ -1124,7 +1124,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Urugway',
-    code: 'UY',
+    code: 'UYU',
     city: 'La Paz',
     coord: {
       "lon": -56.22361,
@@ -1136,7 +1136,7 @@ let p_destinations = [{
   {
     continent: 'South America',
     country: 'Brasil',
-    code: 'BR',
+    code: 'BRL',
     city: 'Salvador',
     coord: {
       "lon": -38.51083,
