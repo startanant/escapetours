@@ -96,3 +96,7 @@ section {
     background-position: center;
     background-color: #fff;
 }
+.map {
+    height: 400px;
+    width: 100%;
+  }
