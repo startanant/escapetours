@@ -1092,6 +1092,127 @@ let p_destinations = [
       }
       }
       
+      ,
+      
+       {
+         continent:'South America',
+         country:'Argentina',
+         code:'AR',
+      	city:'Buenos Aires',
+      	coord: {
+        "lon": -58.377232,
+      "lat": -34.613152
+      }
+      }
+      ,
+      
+       {
+         continent:'South America',
+         country:'Chile',
+         code:'CL',
+      	city:'Santiago',
+      	coord: {
+       "lon": -70.64827,
+      "lat": -33.45694
+      }
+      }
+      
+       ,
+       {
+         continent:'South America',
+         country:'Peru',
+         code:'PE',
+      	city:'Lima',
+      	coord: {
+        "lon": -77.028236,
+      "lat": -12.04318
+      }
+      }
+      
+         ,
+       {
+         continent:'South America',
+         country:'Brasil',
+         code:'BR',
+      	city:'Sao Paulo',
+      	coord: {
+        "lon": -46.636108,
+      "lat": -23.547501
+      }
+      }
+      
+          ,
+       {
+         continent:'South America',
+         country:'Columbia',
+         code:'CO',
+      	city:'Bogota',
+      	coord: {
+        "lon": -74.081749,
+      "lat": 4.60971
+      }
+      }
+      
+         ,
+       {
+         continent:'South America',
+         country:'Ecuador',
+         code:'EC',
+      	city:'Quito',
+      	coord: {
+        "lon": -78.524948,
+      "lat": -0.22985
+      }
+      }
+      
+         ,
+       {
+         continent:'South America',
+         country:'Urugway',
+         code:'UY',
+      	city:'Montevideo',
+      	coord: {
+        "lon": -56.167351,
+      "lat": -34.833462
+      }
+      }
+      
+          ,
+       {
+         continent:'South America',
+         country:'Colombia',
+         code:'CO',
+      	city:'Cartagena',
+      	coord: {
+        "lon": -75.514442,
+      "lat": 10.39972
+      }
+      }
+         ,
+       {
+         continent:'South America',
+         country:'Urugway',
+         code:'UY',
+      	city:'La Paz',
+      	coord: {
+        "lon": -56.22361,
+      "lat": -34.761669
+      }
+      }
+      
+      ,
+       {
+         continent:'South America',
+         country:'Brasil',
+         code:'BR',
+      	city:'Salvador',
+      	coord: {
+        "lon": -38.51083,
+      "lat": -12.97111
+      }
+      }
+      
+      
       
 ];
 
@@ -1121,7 +1242,7 @@ function p_getCityList(continent){
   });
 };
 
-console.log(p_getCityList('Asia'));
+console.log(p_getCityList('South America'));
 
 //p_getCityList('Europe');
 
