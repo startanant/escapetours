@@ -7,18 +7,20 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> -->
     <link rel="stylesheet" href="./assets/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
     <title>Escape Tours</title>
-</head>
+    </head>
 <body>
     <header>
         <div class="splash-text-box">
             <h1>Welcome to Escape Tours. <br>Select your dream destination!</h1>
-            <a class="btn btn-ghost" href="#map" onclick="Test()">Asia</a>
-            <a class="btn btn-ghost" href="#map" onclick="Test()">Australia</a>
-            <a class="btn btn-ghost" href="#map" onclick="Test()">Africa</a>
-            <a class="btn btn-ghost" href="#map" onclick="Test()">North America</a>
-            <a class="btn btn-ghost" href="#map" onclick="Test()">Europe</a>
-            <a class="btn btn-ghost" href="#map" onclick="Test()">South America</a>
+            <a class="btn btn-ghost" href="#map" onclick="displayRandomCity(event)">Asia</a>
+            <a class="btn btn-ghost" href="#map" onclick="displayRandomCity(event)">Australia</a>
+            <a class="btn btn-ghost" href="#map" onclick="displayRandomCity(event)">Africa</a>
+            <a class="btn btn-ghost" href="#map" onclick="displayRandomCity(event)">North America</a>
+            <a class="btn btn-ghost" href="#map" onclick="displayRandomCity(event)">Europe</a>
+            <a class="btn btn-ghost" href="#map" onclick="displayRandomCity(event)">South America</a>
         </div>
     </header>
     <section>
@@ -26,9 +28,10 @@
             <div id="map" class="map"></div>
         </div>
     </section1>
+    <script src="./assets/app.js"></script>
     <script src="./assets/map.js"></script>
     <script src="./assets/currency.js"></script>
-    <script src="./assets/app.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
