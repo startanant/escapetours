@@ -18,6 +18,13 @@ html {
     margin: 0 auto;
 }
 
+.currency {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 30vh;
+    background-color: #e67e22;
+}
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.699)),   url('./img/header.jpg');
     height: 100vh;
@@ -97,6 +104,13 @@ section {
     background-color: #fff;
 }
 .map {
-    height: 400px;
+    height: 40vh;
     width: 100%;
+  }
+
+  .weather {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 30vh;
+    background-color: #e67e22;
   }
