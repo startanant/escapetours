@@ -4,6 +4,8 @@
 function Test(){
   console.log('click  from button');
 }
+
+
 let p_destinations = [
     {
         continent:'Europe',
@@ -661,12 +663,17 @@ function p_getRandomCity(continent){
   p_destinations.forEach(element => {
     element.continent == continent?tmp.push(element):false;
   });
-  return tmp[Math.floor(Math.random()*tmp.length)].coord;
+  let ranValue = Math.floor(Math.random()*tmp.length);
+  return {
+    coord: tmp[ranValue].coord,
+    city: tmp[ranValue].city,
+    countryCode: tmp[ranValue].code
+};
 };
 
 //let p_coord = p_getRandomCity('Australia');
 
-//console.log(p_coord.lat,p_coord.lon);
+console.log(p_getRandomCity('Europe'));
 
 
 function p_getCityList(continent){
