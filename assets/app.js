@@ -17,16 +17,6 @@ let p_destinations = [
         lat: 52.229771
       }
         },
-        {
-         continent:'Europe',
-         country:'Poland',
-         code:'PL',
-      	city:'Poznan',
-      coord: {
-        lon: 16.92993,
-        lat: 52.406921
-      }
-    },
     {
          continent:'Europe',
          country:'Poland',
@@ -643,17 +633,466 @@ let p_destinations = [
       
        {
          continent:'Asia',
-         country:'Taiwan',
-         code:'TW',
-      	city:'Taipei',
+         country:'Japan',
+         code:'JP',
+      	city:'Tokyo',
       	coord: {
-         "lon": 121.531853,
-      "lat": 25.04776
+         "lon": 139.691711,
+      "lat": 35.689499
+      }
+      }
+       ,
+      
+       {
+         continent:'Asia',
+         country:'India',
+         code:'IN',
+      	city:'Kolkata',
+      	coord: {
+         "lon": 88.36972,
+      "lat": 22.569719
+      }
+      }
+      ,
+      
+       {
+         continent:'Asia',
+         country:'Japan',
+         code:'JP',
+      	city:'Osaka',
+      	coord: {
+         "lon": 137.266663,
+      "lat": 35.950001
+      }
+      }
+      ,
+      
+       {
+         continent:'Asia',
+         country:'Vietnam',
+         code:'VN',
+      	city:'Ha Noi',
+      	coord: {
+         "lon": 105.841171,
+      "lat": 21.0245
+      }
+      }
+        ,
+      
+       {
+         continent:'Asia',
+         country:'Pakistan',
+         code:'PK',
+      	city:'Karachi',
+      	coord: {
+         "lon": 67.082199,
+      "lat": 24.9056
+      }
+      }
+        ,
+      
+       {
+         continent:'Asia',
+         country:'United Arab Emirates',
+         code:'AE',
+      	city:'Dubai',
+      	coord: {
+         "lon": 55.304722,
+      "lat": 25.258169
+      }
+      }
+       ,
+      
+       {
+         continent:'Asia',
+         country:'Japan',
+         code:'JP',
+      	city:'Kyoto',
+      	coord: {
+         "lon": 135.753845,
+      "lat": 35.021069
+      }
+      }
+         ,
+      
+       {
+         continent:'Asia',
+         country:'Hong Kong',
+         code:'HK',
+      	city:'Hong Kong',
+      	coord: {
+         "lon": 114.157692,
+      "lat": 22.285521
+      }
+      }
+        ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Melbourne',
+      	coord: {
+         "lon": 144.963318,
+      "lat": -37.813999
       }
       }
       
-        
-         
+       ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Brisbane',
+      	coord: {
+         "lon": 153.029938,
+      "lat": -27.44573
+      }
+      }
+       ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Adelaide',
+      	coord: {
+         "lon": 138.600586,
+      "lat": -34.920502
+      }
+      }
+      ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Perth',
+      	coord: {
+         "lon": 115.833328,
+      "lat": -31.933331
+      }
+      }
+      ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Gold Coast',
+      	coord: {
+         "lon": 153.36055,
+      "lat": -27.97851
+      }
+      }
+      ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Hobart',
+      	coord: {
+         "lon": 147.329407,
+      "lat": -42.87936
+      }
+      }
+       ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Darwin',
+      	coord: {
+        "lon": 130.876846,
+      "lat": -12.40189
+      }
+      }
+      
+       ,
+      
+       {
+         continent:'Australia',
+         country:'Australia',
+         code:'AU',
+      	city:'Newcastle',
+      	coord: {
+        "lon": 151.708435,
+      "lat": -32.876282
+      }
+      }
+      
+        ,
+      
+       {
+         continent:'Australia',
+         country:'New Zealand',
+         code:'NZ',
+      	city:'Auckland',
+      	coord: {
+        "lon": 174.783325,
+      "lat": -36.849998
+      }
+      }
+      
+       ,
+      
+       {
+         continent:'Australia',
+         country:'New Zealand',
+         code:'NZ',
+      	city:'Wellington',
+      	coord: {
+        "lon": 174.766663,
+      "lat": -41.283329
+      }
+      }
+      
+       ,
+      
+       {
+         continent:'Australia',
+         country:'New Zealand',
+         code:'NZ',
+      	city:'Christchurch',
+      	coord: {
+        "lon": 172.633331,
+      "lat": -43.533329
+      }
+      }
+        ,
+      
+       {
+         continent:'Australia',
+         country:'New Zealand',
+         code:'NZ',
+      	city:'Dunedin',
+      	coord: {
+        "lon": 170.503616,
+      "lat": -45.874161
+      }
+      }
+       ,
+      
+       {
+         continent:'Australia',
+         country:'New Zealand',
+         code:'NZ',
+      	city:'Wanaka',
+      	coord: {
+        "lon": 169.149994,
+      "lat": -44.700001
+      }
+      }
+      ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'San Francisco',
+      	coord: {
+        "lon": -122.419418,
+      "lat": 37.774929
+      }
+      }
+      ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Chicago',
+      	coord: {
+        "lon": -87.650047,
+      "lat": 41.850029
+      }
+      }
+      ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Seattle',
+      	coord: {
+         "lon": -122.332069,
+      "lat": 47.606209
+      }
+      }
+      ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Boston',
+      	coord: {
+         "lon": -83.789886,
+      "lat": 30.791861
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Austin',
+      	coord: {
+         "lon": -85.808029,
+      "lat": 38.758389
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Houston',
+      	coord: {
+         "lon": -95.363274,
+      "lat": 29.763281
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Philadelphia',
+      	coord: {
+         "lon": -89.11673,
+      "lat": 32.771519
+      }
+      }
+      ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Denver',
+      	coord: {
+         "lon": -92.337402,
+      "lat": 42.671371
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'San Diego',
+      	coord: {
+         "lon": -117.157257,
+      "lat": 32.715328
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Portland',
+      	coord: {
+         "lon": -122.676208,
+      "lat": 45.523449
+      }
+      }
+      
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Miami',
+      	coord: {
+         "lon": -94.877457,
+      "lat": 36.874512
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Detroit',
+      	coord: {
+          "lon": -83.045753,
+      "lat": 42.331429
+      }
+      }
+        ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Atlanta',
+      	coord: {
+         "lon": -94.164352,
+      "lat": 33.113739
+      }
+      }
+      ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Dallas',
+      	coord: {
+        "lon": -75.963249,
+      "lat": 41.336189
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'Las Vegas',
+      	coord: {
+        "lon": -105.2239,
+      "lat": 35.593929
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'USA',
+         code:'US',
+      	city:'San Antonio',
+      	coord: {
+        "lon": -98.493629,
+      "lat": 29.42412
+      }
+      }
+       ,
+      
+       {
+         continent:'North America',
+         country:'Canada',
+         code:'CA',
+      	city:'Vancouver',
+      	coord: {
+        "lon": -123.119339,
+      "lat": 49.24966
+      }
+      }
+      
+      
 ];
 
 
@@ -673,7 +1112,7 @@ function p_getRandomCity(continent){
 
 //let p_coord = p_getRandomCity('Australia');
 
-console.log(p_getRandomCity('Europe'));
+//console.log(p_coord.lat,p_coord.lon);
 
 
 function p_getCityList(continent){
@@ -681,6 +1120,8 @@ function p_getCityList(continent){
     element.continent == continent?console.log(element.city):false; 
   });
 };
+
+console.log(p_getCityList('Asia'));
 
 //p_getCityList('Europe');
 
