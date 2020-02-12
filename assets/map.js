@@ -6,12 +6,12 @@
 // paris_lng = 48.856461;
 // generate_map(paris_lat, paris_lng);
 
-let coord = p_getRandomCity('Europe');
+//let coord = p_getRandomCity('Europe');
 
-console.log(coord.city);
-console.log(coord.coord.lat, coord.coord.lon);
+// console.log(coord.city);
+// console.log(coord.coord.lat, coord.coord.lon);
 
-generate_map(coord.coord.lon,coord.coord.lat);
+// generate_map(coord.coord.lon,coord.coord.lat);
 
 function generate_map(lat, lng) {
     var map = new ol.Map({
@@ -26,5 +26,11 @@ function generate_map(lat, lng) {
           zoom: 10
         })
     });
+};
+
+function displayRandomCity(event){
+  let coord = p_getRandomCity(event.target.text);
+  generate_map(coord.coord.lon,coord.coord.lat);
+
 }
 
