@@ -1,14 +1,13 @@
-//this file will generate currency data
+let allCurrencies = {};
+let sourceRate = 'CAD';
+let targetRate = "DKK";
+let conversion = 0;
 
-const endpoint = "latest";
-const apiKey = "6192e1367647782b0ed8f19980d669f4";
-const queryURL = `http://data.fixer.io/api/${endpoint}?access_key=${apiKey}`;
-
-
-console.log(queryURL);
-
-function getCurrencyRate( currency ){
-    console.log("this is working");
+function initCurrencies(){
+    const apiKey = "6192e1367647782b0ed8f19980d669f4";
+    const queryURL = `http://data.fixer.io/api/latest?access_key=${apiKey}`;
+    console.log(queryURL);
+    
     $.ajax({
         url: queryURL,
         method: "GET",
@@ -16,39 +15,29 @@ function getCurrencyRate( currency ){
         success: function( currency ) {
         console.log(currency);
 
-        let test = currency.rates.currency;
-        console.log(`The test currency is ${currency}`);
+        allCurrencies = currency.rates;
 
-
-        let canada = currency.rates.CAD; 
-        let usa = currency.rates.USD;
-        let norway = currency.rates.NOK;
+        console.log(allCurrencies);
         
-
-        console.log(`Canadian exchange rate: ${canada}`);
-        console.log(`USA exchange rate: ${usa}`);
-        console.log(`Norway exchange rate: ${norway}`);
-
-
-
+        // return allCurrencies;
         }
     })
 }
 
-getCurrencyRate(  );
+initCurrencies();
 
-async function getData() 
-{
-    //await the response of the fetch call
-   let response = await fetch('http://data.fixer.io/api/latest?access_key=6192e1367647782b0ed8f19980d669f4');
-    //proceed once the first promise is resolved.
-   let data = await response.json()
-    //proceed only when the second promise is resolved
-    return data;
+function getConversionRate( srcCurrency, targetCurrency ){
+    return allCurrencies[srcCurrency]/allCurrencies[targetCurrency];
 }
+// some time in the future
+setTimeout( ()=>{ 
+    // assuem 'allCurrencies' is sset
+    if( allCurrencies.length<1 ) return;
 
-//call getData function
-getData()
-.then(data => console.log(data));
+    let conversion = getConversionRate(sourceRate, targetRate);
+    console.log(conversion);
+    document.getElementById('localCurrency').innerText = "Local currency: " + targetRate;
+    document.getElementById('exchange').innerText = "1 CAD = " + conversion + " " + targetRate;
 
+}, 1000 );
 
