@@ -1,7 +1,9 @@
 //This is JS code for app from Przemek
 //Variables are defined with p_
 
-
+function Test(){
+  console.log('click  from button');
+}
 let p_destinations = [
     {
         continent:'Europe',
@@ -662,9 +664,9 @@ function p_getRandomCity(continent){
   return tmp[Math.floor(Math.random()*tmp.length)].coord;
 };
 
-let p_coord = p_getRandomCity('Australia');
+//let p_coord = p_getRandomCity('Australia');
 
-console.log(p_coord.lat,p_coord.lon);
+//console.log(p_coord.lat,p_coord.lon);
 
 
 function p_getCityList(continent){
@@ -673,7 +675,7 @@ function p_getCityList(continent){
   });
 };
 
-p_getCityList('Europe');
+//p_getCityList('Europe');
 
 // let dest = [
 //   [ //continent
