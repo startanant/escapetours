@@ -20,7 +20,7 @@ function initCurrencies(){
 initCurrencies();
 function getConversionRate( srcCurrency, targetCurrency ){
     conversion =  (allCurrencies[targetCurrency]/allCurrencies[srcCurrency]).toFixed(2);
-    document.getElementById('localCurrency').innerText = "Local currency: " + result.countryCode;
+    document.getElementById('localCurrency').innerText = "Local currency: " + result.currency;
     document.getElementById('exchange').innerText = "1 CAD = " + conversion + " " + result.countryCode;
 }
 setTimeout( ()=>{ 
