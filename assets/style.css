@@ -18,12 +18,7 @@ html {
     margin: 0 auto;
 }
 
-.currency {
-    max-width: 1140px;
-    margin: 0 auto;
-    height: 30vh;
-    text-align: center;
-}
+
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),   url('./img/header.jpg');
@@ -103,6 +98,14 @@ section {
     background-position: center;
     background-color: #fff;
 }
+
+.currency {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 30vh;
+    text-align: center;
+}
+
 .map {
     height: 40vh;
     width: 100%;
