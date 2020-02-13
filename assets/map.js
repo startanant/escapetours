@@ -14,16 +14,35 @@
 // generate_map(coord.coord.lon,coord.coord.lat);
 
 function generate_map(lat, lng) {
+
+    var openCycleMapLayer = new ol.layer.Tile({
+        source: new ol.source.OSM({
+          attributions: [
+            '© <a href="https://www.opencyclemap.org/">OpenCycleMap</a>'
+          ],
+          url: 'https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=5e9e2dd7d391443a8d532f3a3e09e811'
+        })
+      });
+
+      var openSeaMapLayer = new ol.layer.Tile({
+        source: new ol.source.OSM({
+          attributions: [
+            '© <a href="http://www.openseamap.org/">OpenSeaMap</a>'
+          ],
+          opaque: false,
+          url: 'https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png'
+        })
+      });
+
     var map = new ol.Map({
         target: 'map',
         layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
+          openCycleMapLayer,
+          openSeaMapLayer
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([lat,lng]),
-          zoom: 10
+          zoom: 12
         })
     });
 };
