@@ -48,7 +48,9 @@ function generate_map(lat, lng) {
 };
 
 function displayRandomCity(event){
+  console.log('display random city clicked');
     document.getElementById("map").innerHTML = "";
+    console.log(event.target.text);
     result = p_getRandomCity(event.target.text);
     generate_map(result.coord.lon,result.coord.lat);
     getConversionRate(sourceRate, result.countryCode);
