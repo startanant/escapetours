@@ -65,7 +65,7 @@ function displayRandomCity(event){
 
 
 
-  var queryURLForcast = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+  var queryURLForcast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 
   $.ajax({
     url: queryURLForcast,
