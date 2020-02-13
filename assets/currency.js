@@ -5,11 +5,12 @@ let conversion = 0;
 
 function initCurrencies(){
     const apiKey = "6192e1367647782b0ed8f19980d669f4";
-    const queryURL = `https://data.fixer.io/api/latest?access_key=${apiKey}`;
+    const queryURL = `http://data.fixer.io/api/latest?access_key=${apiKey}`;
+    const proxyURL = 'https://repos.codehot.tech/cors_proxy.php?url='+ escape(queryURL);
     $.ajax({
-        url: queryURL,
+        url: proxyURL,
         method: "GET",
-        dataType: 'jsonp',
+        // dataType: 'jsonp',
         success: function( currency ) {
         allCurrencies = currency.rates;
         }
