@@ -359,6 +359,7 @@ let p_destinations = [{
     continent: 'South America',
     country: 'Brasil',
     code: 'BRL',
+    currency: 'Brazilian Real',
     city: 'Rio de Janeiro',
     coord: {
       lon: -43.2075,
@@ -372,6 +373,7 @@ let p_destinations = [{
     continent: 'South America',
     country: 'Brasil',
     code: 'BRL',
+    currency: 'Brazilian Real',
     city: 'Salto',
     coord: {
       lon: -47.286942,
