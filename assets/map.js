@@ -30,7 +30,8 @@ function generate_map(lat, lng) {
 
 function displayRandomCity(event){
     document.getElementById("map").innerHTML = "";
-    let coord = p_getRandomCity(event.target.text);
-    generate_map(coord.coord.lon,coord.coord.lat);
+    result = p_getRandomCity(event.target.text);
+    generate_map(result.coord.lon,result.coord.lat);
+    getConversionRate(sourceRate, result.countryCode);
 }
 

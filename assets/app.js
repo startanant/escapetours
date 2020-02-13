@@ -5,6 +5,8 @@ function Test() {
   console.log('click  from button');
 }
 
+var result = "";
+
 
 let p_destinations = [{
     continent: 'Europe',
