@@ -5,7 +5,7 @@ let conversion = 0;
 
 function initCurrencies(){
     const apiKey = "6192e1367647782b0ed8f19980d669f4";
-    const queryURL = `http://data.fixer.io/api/latest?access_key=${apiKey}`;
+    const queryURL = `https://data.fixer.io/api/latest?access_key=${apiKey}`;
     $.ajax({
         url: queryURL,
         method: "GET",
