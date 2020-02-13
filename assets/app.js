@@ -8,6 +8,7 @@ function Test() {
 var result = "";
 
 
+
 let p_destinations = [{
     continent: 'Europe',
     country: 'Poland',

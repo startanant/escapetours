@@ -1,0 +1,20 @@
+#weatherContainer {
+    border: solid grey;
+    border-radius: 5px;
+    /* background-color: rgb(218, 166, 211); */
+    color:#fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.row{
+    border-top: solid gray;
+}
+
+.col-sm-3{
+    border: gray solid;
+}
+
+
+#city{
+    text-align: center;
+}

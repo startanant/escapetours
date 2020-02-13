@@ -1,68 +1,7 @@
-//this file will generate map data
-//call this function with latitude, longitude co-ordinates to insert map into the target div
-
-//for example:
-// paris_lat = 2.35236;
-// paris_lng = 48.856461;
-// generate_map(paris_lat, paris_lng);
-
-//let coord = p_getRandomCity('Europe');
-
-// console.log(coord.city);
-// console.log(coord.coord.lat, coord.coord.lon);
-
-// generate_map(coord.coord.lon,coord.coord.lat);
-
-function generate_map(lat, lng) {
-
-    var openCycleMapLayer = new ol.layer.Tile({
-        source: new ol.source.OSM({
-          attributions: [
-            '© <a href="https://www.opencyclemap.org/">OpenCycleMap</a>'
-          ],
-          url: 'https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=5e9e2dd7d391443a8d532f3a3e09e811'
-        })
-      });
-
-      var openSeaMapLayer = new ol.layer.Tile({
-        source: new ol.source.OSM({
-          attributions: [
-            '© <a href="http://www.openseamap.org/">OpenSeaMap</a>'
-          ],
-          opaque: false,
-          url: 'https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png'
-        })
-      });
-
-    var map = new ol.Map({
-        target: 'map',
-        layers: [
-          openCycleMapLayer,
-          openSeaMapLayer
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([lat,lng]),
-          zoom: 12
-        })
-    });
-};
-
-function displayRandomCity(event){
-  // console.log('display random city clicked');
-    document.getElementById("map").innerHTML = "";
-    // console.log(event.target.text);
-    result = p_getRandomCity(event.target.text);
-    //console.log(result);
-    var city = result.city;
-    console.log(city);
-    generate_map(result.coord.lon,result.coord.lat);
-    getConversionRate(sourceRate, result.countryCode);
-
-    //serop code goes here
-
-
-    const apiKey = "1c2a3377eeea4d74ddc0ffd638238cfb"
-
+//setup the variables
+//*******************************************************
+const apiKey = "1c2a3377eeea4d74ddc0ffd638238cfb"
+console.log(result);
 
 
   var queryURLForcast = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
@@ -111,7 +50,7 @@ function displayRandomCity(event){
     var tempDayFour= forecastWeather.list[22].main.temp_min+" C";
     var humidityDayFour=forecastWeather.list[22].main.humidity;;
     var windDayFour=forecastWeather.list[22].wind.speed;
-    var dateDayFour=forecastWeather.list[22].dt_txt.slice(0,10);
+    var dateDayFour=forecastWeather.list[22].dt_txt.slice(0,10)
     // console.log(dateDayFour);
    
 
@@ -123,33 +62,49 @@ function displayRandomCity(event){
     $("#descripDayOne").text(descriptionDayOne);
     $("#iconDayOne").attr("src", iconUrlDayOne);
     $("#tempDayOne").text(tempDayOne);
-    $("#humidityDayOne").text(humidityDayOne);
-    $("#windDayOne").text(windDayOne);
-    $("#dateDayOne").text(dateDayOne);
+    $("#humidityDayOne").text(humidityDayOne)
+    $("#windDayOne").text(windDayOne)
+    $("#dateDayOne").text(dateDayOne)
 
     $("#descripDayTwo").text(descriptionDayTwo);
     $("#iconDayTwo").attr("src", iconUrlDayTwo);
     $("#tempDayTwo").text(tempDayTwo);
-    $("#humidityDayTwo").text(humidityDayTwo);
-    $("#windDayTwo").text(windDayTwo);
-    $("#dateDayTwo").text(dateDayTwo);
+    $("#humidityDayTwo").text(humidityDayTwo)
+    $("#windDayTwo").text(windDayTwo)
+    $("#dateDayTwo").text(dateDayTwo)
 
     $("#descripDayThree").text(descriptionDayThree);
     $("#iconDayThree").attr("src", iconUrlDayThree);
     $("#tempDayThree").text(tempDayThree);
-    $("#humidityDayThree").text(humidityDayThree);
-    $("#windDayThree").text(windDayThree);
-    $("#dateDayThree").text(dateDayThree);
+    $("#humidityDayThree").text(humidityDayThree)
+    $("#windDayThree").text(windDayThree)
+    $("#dateDayThree").text(dateDayThree)
 
     $("#descripDayFour").text(descriptionDayFour);
     $("#iconDayFour").attr("src", iconUrlDayFour);
     $("#tempDayFour").text(tempDayFour);
-    $("#humidityDayFour").text(humidityDayFour);
-    $("#windDayFour").text(windDayFour);
-    $("#dateDayFour").text(dateDayFour);
+    $("#humidityDayFour").text(humidityDayFour)
+    $("#windDayFour").text(windDayFour)
+    $("#dateDayFour").text(dateDayFour)
 
-$("img").css("width", "60px");
-});
+$("img").css("width", "60px")
 
-}
+  });
 
+  
+
+
+// function addElement() {
+// var newDiv=document.createElement("div");
+// var newContent=document.createTextNode ("hi there and greetings")
+// newDiv.appendChild(newContent);
+
+// var currentDiv=document.getElementById("div1")
+
+// // }
+// function setWeather() {
+//   $()
+
+// }
+
+// -----------------
