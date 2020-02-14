@@ -12,7 +12,7 @@ function getFacts(country) {
     let area = countries.countries[country].data.geography.area.total.value;
     let population = countries.countries[country].data.people.population.total;
     countries.countries[country].data.people.languages.language.forEach(logLanguage);
-    
+    languages_list = languages_list.replace('only','');
     // console.log("Population: " + countries.countries[country].data.people.population.total);
     // console.log("Background: "+ countries.countries[country].data.introduction.background);
     // console.log("Languages: ");
