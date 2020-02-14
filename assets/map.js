@@ -54,7 +54,7 @@ function displayRandomCity(event){
     result = p_getRandomCity(event.target.text);
     //console.log(result);
     var city = result.city;
-    console.log(city);
+    // console.log(city);
     generate_map(result.coord.lon,result.coord.lat);
     getConversionRate(sourceRate, result.countryCode);
 
@@ -71,7 +71,7 @@ function displayRandomCity(event){
     url: queryURLForcast,
     method: "GET"
   }).then(function (forecastWeather) {
-    console.log(forecastWeather);
+    // console.log(forecastWeather);
     var cityName=forecastWeather.city.name;
 
     var descriptionDayOne=forecastWeather.list[0].weather[0].description;
