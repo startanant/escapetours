@@ -13,13 +13,6 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),   url('./img/header.jpg');
     height: 100vh;
@@ -29,7 +22,7 @@ header {
 
 .splash-text-box {
     position: absolute;
-    width: 1140px;
+    width: 800px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -44,6 +37,15 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 120%;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .btn:link,

@@ -1,17 +1,17 @@
 #weatherContainer {
-    border: solid grey;
-    border-radius: 5px;
+    border: none;
+    margin-top:10px;
     /* background-color: rgb(218, 166, 211); */
     color:#fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', 'Arial', sans-serif;
 }
 
 .row{
-    border-top: solid gray;
+    border-top: solid white 1px;
 }
 
 .col-sm-3{
-    border: gray solid;
+    border:#fff solid 1px;
 }
 
 
