@@ -1,134 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/weatherStyle.css">
-        <link rel="stylesheet" href="./assets/style.css">
-        <link rel="stylesheet" href="./assets/media.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
-        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
-        <title>Escape tours</title>
-    </head>
 
-    <body>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark py-3">
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#target" onclick="displayRandomCity(event)">Australia<span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">Africa<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">North America<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">Asia<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">Europe<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">South America<span class="sr-only"></span></a>
-                  </li>
-              </ul>
-              
-            </div>
-        </nav>
-        
-        <header id="startPage">
-          <div class="splash-text-box">
-              <h1>Welcome to Escape Tours. <br>Select your dream destination!</h1>
-              <!-- <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">Australia</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/weatherStyle.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/media.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css"
+    type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+  <title>Escape tours</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark py-3">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#target" onclick="displayRandomCity(event)">Australia<span
+                class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#target" onclick="displayRandomCity(event)">Africa<span
+                class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#target" onclick="displayRandomCity(event)">North America<span
+                class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#target" onclick="displayRandomCity(event)">Asia<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#target" onclick="displayRandomCity(event)">Europe<span
+                class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#target" onclick="displayRandomCity(event)">South America<span
+                class="sr-only"></span></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <header id="startPage">
+      <div class="splash-text-box">
+        <h1>Welcome to Escape Tours. <br>Select your dream destination!</h1>
+        <!-- <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">Australia</a>
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">Africa</a>
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">North America</a>
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">Asia</a>
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">Europe</a>
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">South America</a> -->
-          </div>
-          
-        </header>
-      
-    
-    <section>
-      <label id="target"></label>
-        <div class="container currency" id="currency">
-          <div class="row">
-            <div class="col-sm-6">
-            <div class="targetCurrency text-center">
-                <br><br><br>
-                <h2 style="text-decoration:underline;"id="country"></h2>                
-                <h2 id="localCurrency"></h2>
-                <h2 class="rate" id="exchange"></h2>
-            </div>
-          </div>
-          <div class="col-sm-6"></div>
-          </div>
-        </div>
-        <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-         <div id="map" class="map"></div>
-        </div>
-        <div class="col-sm-6"></div>
-        </div>
       </div>
 
-        
-        <div id= "weatherContainer" class="container text-left">
-          <h2 id="weatherHeader"> Four Day Weather Forecast For <span style="text-decoration: underline" id="city">.....</span></h2>
-          <div class="row">
+    </header>
+
+
+    <section>
+      <label id="target"></label>
+      <div class="currency container" id="currency">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="targetCurrency text-center">
+              <br><br><br>
+              <h2 style="text-decoration:underline;" id="country"></h2>
+              <h2 id="localCurrency"></h2>
+              <h2 class="rate" id="exchange"></h2>
+            </div>
+          </div>
+          <div class="col-sm-6" id="funfacts">
+            <h2 id="weatherHeader">FACTS</h2>
+            <p id="country_name"></p>
+            <p id="population"></p>
+            <p id="area"></p>
+            <p id="languages"></p>
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="map" class="map"></div>
+          </div>
+          <div class="col-sm-6"></div>
+        </div>
+        <div class="row">
+          <div id="weatherContainer" class="container text-left">
+            <h2 id="weatherHeader"> Four Day Weather Forecast For <span style="text-decoration: underline"
+                id="city">.....</span></h2>
+            <div class="row">
               <div id="dayOne" class="col-sm-3  weatherGrid">
-                  <div> <img id="iconDayOne" href=""></img><span id="descripDayOne">...</span></div>
-                  <div>Temp: <span id="tempDayOne">...</span></div>
-                  <div>Humidity: <span id="humidityDayOne">...</span></div>
-                  <div>Wind: <span id="windDayOne">...</span></div>
-                  <date id="dateDayOne">...</date>
+                <div> <img id="iconDayOne" href=""></img><span id="descripDayOne">...</span></div>
+                <div>Temp: <span id="tempDayOne">...</span></div>
+                <div>Humidity: <span id="humidityDayOne">...</span></div>
+                <div>Wind: <span id="windDayOne">...</span></div>
+                <date id="dateDayOne">...</date>
               </div>
               <div id="dayTwo" class="col-sm-3  weatherGrid">
-                  <div><img id="iconDayTwo"></imgid></img><span id="descripDayTwo">...</span></div>
-                  <div>Temp: <span id="tempDayTwo">Low:</span></div>
-                  <div>Humidity: <span id="humidityDayTwo">...</span></div>
-                  <div>Wind: <span id="windDayTwo">...</span></div>
-                  <date id="dateDayTwo">...</date>
+                <div><img id="iconDayTwo"></imgid></img><span id="descripDayTwo">...</span></div>
+                <div>Temp: <span id="tempDayTwo">Low:</span></div>
+                <div>Humidity: <span id="humidityDayTwo">...</span></div>
+                <div>Wind: <span id="windDayTwo">...</span></div>
+                <date id="dateDayTwo">...</date>
               </div>
               <div id="dayThree" class="col-sm-3  weatherGrid">
-                  <div><img id="iconDayThree" src="" alt="" sizes="" srcset=""><span id="descripDayThree">...</span></div>
-                  <div>Temp: <span id="tempDayThree">Low:</span></div>
-                  <div>Humidity: <span id="humidityDayThree">...</span></div>
-                  <div>Wind: <span id="windDayThree">...</span></div>
-                  <date id="dateDayThree">...</date>
+                <div><img id="iconDayThree" src="" alt="" sizes="" srcset=""><span id="descripDayThree">...</span></div>
+                <div>Temp: <span id="tempDayThree">Low:</span></div>
+                <div>Humidity: <span id="humidityDayThree">...</span></div>
+                <div>Wind: <span id="windDayThree">...</span></div>
+                <date id="dateDayThree">...</date>
               </div>
               <div id="dayFour" class="col-sm-3  weatherGrid">
-                  <div><img id="iconDayFour" src="" alt=""><span id="descripDayFour">...</span></div>
-                  <div>Temp: <span id="tempDayFour">Low:</span></div>
-                  <div>Humidity: <span id="humidityDayFour">...</span></div>
-                  <div>Wind: <span id="windDayFour">...</span></div>
-                  <date id="dateDayFour">...</date>
+                <div><img id="iconDayFour" src="" alt=""><span id="descripDayFour">...</span></div>
+                <div>Temp: <span id="tempDayFour">Low:</span></div>
+                <div>Humidity: <span id="humidityDayFour">...</span></div>
+                <div>Wind: <span id="windDayFour">...</span></div>
+                <date id="dateDayFour">...</date>
               </div>
-              
+            </div>
           </div>
-          
-          
-  
+        </div>
       </div>
-      <div id="facts" class="container">
-          <h2 id="weatherHeader">FACTS</h2>
-          <p id="country_name"></p>
-          <p id="population"></p>
-          <p id="area"></p>
-          <p id="languages"></p>
-    </div>
     </section>
   </div>
 
@@ -138,19 +141,22 @@
 
 
 
-        <!-- <div class="container">
+  <!-- <div class="container">
           </div> -->
 
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="./assets/app.js"></script>
-        <script src="./assets/currency.js"></script>
-        <script src="./assets/map.js"></script>
-        <script src="./assets/facts.js"></script>
-        <!-- <script src="./assets/weatherscript.js"></script> -->
-    </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="./assets/app.js"></script>
+  <script src="./assets/currency.js"></script>
+  <script src="./assets/map.js"></script>
+  <script src="./assets/facts.js"></script>
+  <!-- <script src="./assets/weatherscript.js"></script> -->
+</body>
+
 </html>
