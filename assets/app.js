@@ -86,8 +86,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'New York',
     coord: {
-      lon: -75.499901,
-      lat: 43.000351
+      lon: -74.005974,
+      lat: 40.712776
     }
   },
 
@@ -98,8 +98,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Washington',
     coord: {
-      lon: -91.69294,
-      lat: 41.299179
+      lon: -77.036873,
+      lat: 38.907192
     }
   },
 
@@ -120,24 +120,13 @@ let p_destinations = [{
     country: 'USA',
     code: 'USD',
     currency: 'US Dollar',
-    city: 'California',
+    city: 'San Francisco',
     coord: {
-      lon: -76.507446,
-      lat: 38.3004
+      lon: -122.419418,
+      lat: 37.774929
     }
   },
 
-  {
-    continent: 'North America',
-    country: 'USA',
-    code: 'USD',
-    currency: 'US Dollar',
-    city: 'Texas',
-    coord: {
-      lon: -99.25061,
-      lat: 31.250441
-    }
-  },
 
   {
     continent: 'North America',
@@ -953,8 +942,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Boston',
     coord: {
-      "lon": -83.789886,
-      "lat": 30.791861
+      "lon": -71.110369,
+      "lat": 42.3542647
     }
   },
 
@@ -965,8 +954,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Austin',
     coord: {
-      "lon": -85.808029,
-      "lat": 38.758389
+      "lon": -97.743057,
+      "lat": 30.267153
     }
   },
 
@@ -989,8 +978,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Philadelphia',
     coord: {
-      "lon": -89.11673,
-      "lat": 32.771519
+      "lon": -75.165222,
+      "lat": 39.952583
     }
   },
 
@@ -1001,8 +990,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Denver',
     coord: {
-      "lon": -92.337402,
-      "lat": 42.671371
+      "lon": -104.990250,
+      "lat": 39.739235
     }
   },
 
@@ -1039,8 +1028,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Miami',
     coord: {
-      "lon": -94.877457,
-      "lat": 36.874512
+      "lon": -80.2466275,
+      "lat": 25.7656957
     }
   },
 
@@ -1063,8 +1052,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Atlanta',
     coord: {
-      "lon": -94.164352,
-      "lat": 33.113739
+      "lon": -84.387985,
+      "lat": 33.748997
     }
   },
 
@@ -1075,8 +1064,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Dallas',
     coord: {
-      "lon": -75.963249,
-      "lat": 41.336189
+      "lon": -96.796989,
+      "lat": 32.776665
     }
   },
 
@@ -1087,8 +1076,8 @@ let p_destinations = [{
     currency: 'US Dollar',
     city: 'Las Vegas',
     coord: {
-      "lon": -105.2239,
-      "lat": 35.593929
+      "lon": -115.139832,
+      "lat": 36.169941
     }
   },
 
@@ -1257,7 +1246,8 @@ function p_getRandomCity(continent) {
     coord: tmp[ranValue].coord,
     city: tmp[ranValue].city,
     countryCode: tmp[ranValue].code,
-    currency: tmp[ranValue].currency
+    currency: tmp[ranValue].currency,
+    country: tmp[ranValur].country
   };
 };
 
