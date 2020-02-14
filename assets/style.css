@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.navlink-hover:hover {
+    text-decoration: underline;
+}
+
 html {
     background-color: #fff;
     color: #555;

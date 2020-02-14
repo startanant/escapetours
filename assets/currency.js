@@ -22,7 +22,7 @@ function getConversionRate( srcCurrency, targetCurrency ){
     conversion =  (allCurrencies[targetCurrency]/allCurrencies[srcCurrency]).toFixed(2);
     document.getElementById('localCurrency').innerText = "Local currency: " + result.currency;
     document.getElementById('exchange').innerText = "1 CAD = " + conversion + " " + result.countryCode;
-    document.getElementById('country').innerText = "Welcome to " + result.city + " , " + result.country;
+    document.getElementById('country').innerText = "Welcome to " + result.city + ", " + result.country;
 }
 setTimeout( ()=>{ 
     if( allCurrencies.length<1 ) return;
