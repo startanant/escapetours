@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">Australia<span class="sr-only"></span></a>
+                    <a class="nav-link" href="#target" onclick="displayRandomCity(event)">Australia<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#currency" onclick="displayRandomCity(event)">Africa<span class="sr-only"></span></a>
@@ -56,16 +56,18 @@
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">Europe</a>
               <a class="btn btn-ghost" href="#currency" onclick="displayRandomCity(event)">South America</a> -->
           </div>
+          
         </header>
       
     
     <section>
+      <label id="target"></label>
         <div class="container currency" id="currency">
           <div class="row">
             <div class="col-sm-6">
             <div class="targetCurrency text-center">
 
-                <h1 id="country"></h1>                
+                <h2 id="country"></h2>                
                 <h2 id="localCurrency"></h2>
                 <h2 id="exchange"></h2>
             </div>
