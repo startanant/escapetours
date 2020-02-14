@@ -57,8 +57,20 @@ function displayRandomCity(event){
     // console.log(city);
     generate_map(result.coord.lon,result.coord.lat);
     getConversionRate(sourceRate, result.countryCode);
-
-    //serop code goes here
+    // console.log(result.country);
+    // facts_country = result.country;
+    // switch (facts_country) {
+    //     case 'USA': facts_country = 'united_states';
+    //                 break;
+        
+    //     default:
+    //         break;
+    // }
+    getFacts("canada");
+    // facts_country = facts_country.toLowerCase();
+    // console.log(facts_country);
+    // getFacts(facts_country);
+    // //serop code goes here
 
 
     const apiKey = "1c2a3377eeea4d74ddc0ffd638238cfb"
