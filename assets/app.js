@@ -1247,7 +1247,7 @@ function p_getRandomCity(continent) {
     city: tmp[ranValue].city,
     countryCode: tmp[ranValue].code,
     currency: tmp[ranValue].currency,
-    country: tmp[ranValur].country
+    country: tmp[ranValue].country
   };
 };
 
