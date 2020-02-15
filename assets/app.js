@@ -346,7 +346,7 @@ let p_destinations = [{
 
   {
     continent: 'South America',
-    country: 'Brasil',
+    country: 'Brazil',
     code: 'BRL',
     currency: 'Brazilian Real',
     city: 'Rio de Janeiro',
@@ -360,7 +360,7 @@ let p_destinations = [{
 
   {
     continent: 'South America',
-    country: 'Brasil',
+    country: 'Brazil',
     code: 'BRL',
     currency: 'Brazilian Real',
     city: 'Salto',
@@ -372,7 +372,7 @@ let p_destinations = [{
 
   {
     continent: 'Europe',
-    country: 'Great Britain',
+    country: 'United Kingdom',
     code: 'GBP',
     currency: 'Pound Stirling',
     city: 'London',
@@ -552,7 +552,7 @@ let p_destinations = [{
 
   {
     continent: 'Europe',
-    country: 'Chroatia',
+    country: 'Croatia',
     code: 'HRK',
     currency: 'Kuna',
     city: 'Dubrovnik',
@@ -636,7 +636,7 @@ let p_destinations = [{
 
   {
     continent: 'Asia',
-    country: 'Philipinnes',
+    country: 'Philippines',
     code: 'PHP',
     currency: 'Philippine Peso',
     city: 'Manila',

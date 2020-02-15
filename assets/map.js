@@ -57,16 +57,23 @@ function displayRandomCity(event){
     // console.log(city);
     generate_map(result.coord.lon,result.coord.lat);
     getConversionRate(sourceRate, result.countryCode);
-    // console.log(result.country);
-    // facts_country = result.country;
-    // switch (facts_country) {
-    //     case 'USA': facts_country = 'united_states';
-    //                 break;
-        
-    //     default:
-    //         break;
-    // }
-    getFacts("canada");
+    console.log(result.country);
+    facts_country = result.country;
+    switch (facts_country) {
+        case 'USA': facts_country = 'united_states';
+                    break;
+        case 'South Africa': facts_country = 'south_africa';
+                    break;
+        case 'United Kingdom': facts_country = 'united_kingdom';
+                    break;
+        case 'United Arab Emirates': facts_country = 'united_arab_emirates';
+        break;
+        default:
+            break;
+    }
+    facts_country = facts_country.toLowerCase();
+    console.log(facts_country);
+    getFacts(facts_country);
     // facts_country = facts_country.toLowerCase();
     // console.log(facts_country);
     // getFacts(facts_country);
