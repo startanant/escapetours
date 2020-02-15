@@ -104,33 +104,33 @@ function displayRandomCity(event){
     // console.log(iconUrlDayOne);
    
 
-    var descriptionDayTwo=forecastWeather.list[6].weather[0].description;
-    var iconCode=forecastWeather.list[6].weather[0].icon;
+    var descriptionDayTwo=forecastWeather.list[8].weather[0].description;
+    var iconCode=forecastWeather.list[8].weather[0].icon;
     var iconUrlDayTwo=`https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    var tempDayTwo= forecastWeather.list[6].main.temp_min+" C";
-    var humidityDayTwo=forecastWeather.list[6].main.humidity;;
-    var windDayTwo=forecastWeather.list[6].wind.speed;
-    var dateDayTwo=forecastWeather.list[6].dt_txt.slice(0,10)
+    var tempDayTwo= forecastWeather.list[8].main.temp_min+" C";
+    var humidityDayTwo=forecastWeather.list[8].main.humidity;;
+    var windDayTwo=forecastWeather.list[8].wind.speed;
+    var dateDayTwo=forecastWeather.list[8].dt_txt.slice(0,10)
     // console.log(dateDayTwo);
     
 
-    var descriptionDayThree=forecastWeather.list[14].weather[0].description;
-    var iconCode=forecastWeather.list[14].weather[0].icon;
+    var descriptionDayThree=forecastWeather.list[16].weather[0].description;
+    var iconCode=forecastWeather.list[16].weather[0].icon;
     var iconUrlDayThree=`https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    var tempDayThree= forecastWeather.list[14].main.temp_min+" C";
-    var humidityDayThree=forecastWeather.list[14].main.humidity;;
-    var windDayThree=forecastWeather.list[14].wind.speed;
-    var dateDayThree=forecastWeather.list[14].dt_txt.slice(0,10)
+    var tempDayThree= forecastWeather.list[16].main.temp_min+" C";
+    var humidityDayThree=forecastWeather.list[16].main.humidity;;
+    var windDayThree=forecastWeather.list[16].wind.speed;
+    var dateDayThree=forecastWeather.list[16].dt_txt.slice(0,10)
     // console.log(dateDayThree);
    
 
-    var descriptionDayFour=forecastWeather.list[22].weather[0].description;
-    var iconCode=forecastWeather.list[22].weather[0].icon;
+    var descriptionDayFour=forecastWeather.list[24].weather[0].description;
+    var iconCode=forecastWeather.list[24].weather[0].icon;
     var iconUrlDayFour=`https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    var tempDayFour= forecastWeather.list[22].main.temp_min+" C";
-    var humidityDayFour=forecastWeather.list[22].main.humidity;;
-    var windDayFour=forecastWeather.list[22].wind.speed;
-    var dateDayFour=forecastWeather.list[22].dt_txt.slice(0,10);
+    var tempDayFour= forecastWeather.list[24].main.temp_min+" C";
+    var humidityDayFour=forecastWeather.list[24].main.humidity;;
+    var windDayFour=forecastWeather.list[24].wind.speed;
+    var dateDayFour=forecastWeather.list[24].dt_txt.slice(0,10);
     // console.log(dateDayFour);
    
 
