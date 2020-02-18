@@ -1,17 +1,6 @@
 //this file will generate map data
 //call this function with latitude, longitude co-ordinates to insert map into the target div
 
-//for example:
-// paris_lat = 2.35236;
-// paris_lng = 48.856461;
-// generate_map(paris_lat, paris_lng);
-
-//let coord = p_getRandomCity('Europe');
-
-// console.log(coord.city);
-// console.log(coord.coord.lat, coord.coord.lon);
-
-// generate_map(coord.coord.lon,coord.coord.lat);
 
 function generate_map(lat, lng) {
 
@@ -48,16 +37,16 @@ function generate_map(lat, lng) {
 };
 
 function displayRandomCity(event){
-  // console.log('display random city clicked');
+  
     document.getElementById("map").innerHTML = "";
-    // console.log(event.target.text);
+    
     result = p_getRandomCity(event.target.text);
-    //console.log(result);
+    
     var city = result.city;
-    // console.log(city);
+    
     generate_map(result.coord.lon,result.coord.lat);
     getConversionRate(sourceRate, result.countryCode);
-    console.log(result.country);
+    
     facts_country = result.country;
     switch (facts_country) {
         case 'USA': facts_country = 'united_states';
@@ -76,12 +65,9 @@ function displayRandomCity(event){
             break;
     }
     facts_country = facts_country.toLowerCase();
-    console.log(facts_country);
+    
     getFacts(facts_country);
-    // facts_country = facts_country.toLowerCase();
-    // console.log(facts_country);
-    // getFacts(facts_country);
-    // //serop code goes here
+    
 
 
     const apiKey = "1c2a3377eeea4d74ddc0ffd638238cfb"
@@ -94,7 +80,7 @@ function displayRandomCity(event){
     url: queryURLForcast,
     method: "GET"
   }).then(function (forecastWeather) {
-    // console.log(forecastWeather);
+   
     var cityName=forecastWeather.city.name;
 
     var descriptionDayOne=forecastWeather.list[0].weather[0].description;
@@ -104,8 +90,7 @@ function displayRandomCity(event){
     var humidityDayOne=forecastWeather.list[0].main.humidity;
     var windDayOne=forecastWeather.list[0].wind.speed;
     var dateDayOne=forecastWeather.list[0].dt_txt.slice(0,10)
-    // console.log(dateDayOne);
-    // console.log(iconUrlDayOne);
+    
    
 
     var descriptionDayTwo=forecastWeather.list[8].weather[0].description;
@@ -115,7 +100,7 @@ function displayRandomCity(event){
     var humidityDayTwo=forecastWeather.list[8].main.humidity;;
     var windDayTwo=forecastWeather.list[8].wind.speed;
     var dateDayTwo=forecastWeather.list[8].dt_txt.slice(0,10)
-    // console.log(dateDayTwo);
+    
     
 
     var descriptionDayThree=forecastWeather.list[16].weather[0].description;
@@ -125,7 +110,7 @@ function displayRandomCity(event){
     var humidityDayThree=forecastWeather.list[16].main.humidity;;
     var windDayThree=forecastWeather.list[16].wind.speed;
     var dateDayThree=forecastWeather.list[16].dt_txt.slice(0,10)
-    // console.log(dateDayThree);
+    
    
 
     var descriptionDayFour=forecastWeather.list[24].weather[0].description;
@@ -135,12 +120,12 @@ function displayRandomCity(event){
     var humidityDayFour=forecastWeather.list[24].main.humidity;;
     var windDayFour=forecastWeather.list[24].wind.speed;
     var dateDayFour=forecastWeather.list[24].dt_txt.slice(0,10);
-    // console.log(dateDayFour);
+   
    
 
 
     var upperCaseDesrp=descriptionDayOne.charAt(0).toUpperCase + descriptionDayOne.substr(1,descriptionDayOne.length);
-      // console.log(upperCaseDesrp)
+      
     $('#city').text(cityName);
 
     $("#descripDayOne").text(descriptionDayOne);

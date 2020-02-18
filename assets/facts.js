@@ -7,20 +7,13 @@ function getFacts(country) {
     document.getElementById('languages').innerText = "";
     
     $.getJSON("https://raw.githubusercontent.com/iancoleman/cia_world_factbook_api/master/data/factbook.json", function(countries) {
-    //console.log("country: " + countries.countries[country].data.name);
     let country_name = countries.countries[country].data.name;
     let area = countries.countries[country].data.geography.area.total.value;
     let population = countries.countries[country].data.people.population.total;
     countries.countries[country].data.people.languages.language.forEach(logLanguage);
     languages_list = languages_list.replace('only','');
-    // console.log("Population: " + countries.countries[country].data.people.population.total);
-    // console.log("Background: "+ countries.countries[country].data.introduction.background);
-    // console.log("Languages: ");
-    // countries.countries[country].data.people.languages.language.forEach(logLanguage);
-    // //console.log("Drugs: " + countries.countries[country].data.transnational_issues.illicit_drugs.note);
     
     document.getElementById('country_name').innerText = country_name;
-    // console.log(population/1000000);
     document.getElementById('population').innerText = "Population: "+ population/1000000 + " million";
     document.getElementById('area').innerText = "Area: "+area + " sq km";
     document.getElementById('languages').innerText = "Languages: " +languages_list;
