@@ -67,7 +67,11 @@ function displayRandomCity(event){
         case 'United Kingdom': facts_country = 'united_kingdom';
                     break;
         case 'United Arab Emirates': facts_country = 'united_arab_emirates';
-        break;
+                    break;
+        case 'Hong Kong': facts_country = 'hong_kong';
+                    break;
+        case 'New Zealand': facts_country = 'new_zealand';
+                    break;
         default:
             break;
     }

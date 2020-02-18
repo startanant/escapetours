@@ -21,7 +21,7 @@ function getFacts(country) {
     
     document.getElementById('country_name').innerText = country_name;
     document.getElementById('population').innerText = "Population: "+ population;
-    document.getElementById('area').innerText = "Area: "+area + "sq km";
+    document.getElementById('area').innerText = "Area: "+area + " sq km";
     document.getElementById('languages').innerText = "Languages: " +languages_list;
     languages_list = '';
 
