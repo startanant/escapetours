@@ -280,7 +280,7 @@ let p_destinations = [{
     }
   },
 
-// end of new
+  // end of new
   {
     continent: 'Africa',
     country: 'Egypt',
@@ -325,7 +325,7 @@ let p_destinations = [{
     continent: 'Africa',
     country: 'Gabon',
     code: 'XAF',
-    currency: 'CFA Franc BEAC',	
+    currency: 'CFA Franc BEAC',
     city: 'Gamba',
     coord: {
       lon: 10,
