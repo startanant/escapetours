@@ -20,7 +20,8 @@ function getFacts(country) {
     // //console.log("Drugs: " + countries.countries[country].data.transnational_issues.illicit_drugs.note);
     
     document.getElementById('country_name').innerText = country_name;
-    document.getElementById('population').innerText = "Population: "+ population;
+    // console.log(population/1000000);
+    document.getElementById('population').innerText = "Population: "+ population/1000000 + " million";
     document.getElementById('area').innerText = "Area: "+area + " sq km";
     document.getElementById('languages').innerText = "Languages: " +languages_list;
     languages_list = '';
