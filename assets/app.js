@@ -1,5 +1,7 @@
 //data structure for cities
 
+let result = "";
+
 let p_destinations = [{
     continent: 'Europe',
     country: 'Poland',
