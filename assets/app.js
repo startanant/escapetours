@@ -1,6 +1,6 @@
 //data structure for cities
 
-let result = "";
+var result = "";
 
 let p_destinations = [{
     continent: 'Europe',
